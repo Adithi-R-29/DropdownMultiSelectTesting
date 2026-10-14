@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown and Multi-Select Test Page</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 760px; margin: 40px auto; padding: 24px; color: #222; }
+        label { display: block; margin: 16px 0 8px; font-weight: bold; }
+        select { min-width: 260px; padding: 10px; font-size: 16px; }
+        h1 { color: #184e77; }
+        .note { color: #555; }
+    </style>
+</head>
+<body>
+    <h1>Selenium Dropdown Test Page</h1>
+    <p class="note">Local demo page used by the automated Selenium test suite.</p>
+
+    <label for="language">Choose a programming language (single-select):</label>
+    <select id="language" name="language">
+        <option value="">Select a language</option>
+        <option value="java">Java</option>
+        <option value="python">Python</option>
+        <option value="javascript">JavaScript</option>
+        <option value="cpp">C++</option>
+    </select>
+
+    <h2>Skills</h2>
+    <label for="skills">Choose multiple skills (use Ctrl/Command in a real browser):</label>
+    <select id="skills" name="skills" multiple size="4">
+        <option value="selenium">Selenium</option>
+        <option value="java">Java</option>
+        <option value="sql">SQL</option>
+        <option value="testing">Software Testing</option>
+    </select>
+</body>
+</html>
